@@ -1,0 +1,193 @@
+:/pkgs_local/cuda-10.2/lib64:/pkgs_local/cuda-10.2/lib64
+DATASET STATS OF ORIGINAL
+Dataset STATS Data(x=[34, 34], edge_index=[2, 156], y=[34], train_mask=[34])
+==============================================================
+Number of nodes: 34
+Number of edges: 156
+Average node degree: 4.59
+Number of training nodes: 4
+Training node label rate: 0.12
+Has isolated nodes: False
+Has self-loops: False
+Is undirected: True
+
+DATASET STATS OF SPARSETENSOR
+Dataset STATS Data(x=[34, 34], y=[34], train_mask=[34], adj_t=[34, 34, nnz=156])
+==============================================================
+Number of nodes: 34
+Number of edges: 156
+Average node degree: 4.59
+Number of training nodes: 4
+Training node label rate: 0.12
+Has isolated nodes: False
+Has self-loops: False
+Is undirected: True
+RUNNING ORIGINAL
+MODEL INFO GNN(
+  (conv1): GCNConv(34, 16)
+  (conv2): GCNConv(16, 4)
+) Data(x=[34, 34], edge_index=[2, 156], y=[34], train_mask=[34])
+trainable parameters count 628
+model size in bytes 4063
+Data theoretical memory usage in bytes 7426
+CPU memory 17440
+GPU memory 0
+nvidia-smi free and used GPU memory (8365.98, 3.15)
+STATS_SUM1 StatsSummary(time_mean=0.003322240663692355, time_std=0.00015326027642004192, max_allocated_cuda=0.0, max_reserved_cuda=0.0, max_active_cuda=0.0, min_nvidia_smi_free_cuda=7209.49, max_nvidia_smi_used_cuda=1159.64)
+RUNNING SPARSETENSOR
+MODEL INFO GNN(
+  (conv1): GCNConv(34, 16)
+  (conv2): GCNConv(16, 4)
+) Data(x=[34, 34], y=[34], train_mask=[34], adj_t=[34, 34, nnz=156])
+trainable parameters count 628
+model size in bytes 4063
+Data theoretical memory usage in bytes 6458
+CPU memory 36584
+GPU memory 0
+nvidia-smi free and used GPU memory (7209.49, 1159.64)
+STATS_SUM2 StatsSummary(time_mean=0.0032382397912442684, time_std=0.0005060472758486867, max_allocated_cuda=0.0, max_reserved_cuda=0.0, max_active_cuda=0.0, min_nvidia_smi_free_cuda=7209.49, max_nvidia_smi_used_cuda=1159.64)
+SPEEDUP of 1.025940287891963
+DATASET STATS OF ORIGINAL
+Dataset STATS Data(x=[2708, 1433], edge_index=[2, 10556], y=[2708], train_mask=[2708], val_mask=[2708], test_mask=[2708])
+==============================================================
+Number of nodes: 2708
+Number of edges: 10556
+Average node degree: 3.90
+Number of training nodes: 140
+Training node label rate: 0.05
+Has isolated nodes: False
+Has self-loops: False
+Is undirected: True
+
+DATASET STATS OF SPARSETENSOR
+Dataset STATS Data(x=[2708, 1433], y=[2708], train_mask=[2708], val_mask=[2708], test_mask=[2708], adj_t=[2708, 2708, nnz=10556])
+==============================================================
+Number of nodes: 2708
+Number of edges: 10556
+Average node degree: 3.90
+Number of training nodes: 140
+Training node label rate: 0.05
+Has isolated nodes: False
+Has self-loops: False
+Is undirected: True
+RUNNING ORIGINAL
+MODEL INFO GNN(
+  (conv1): GCNConv(1433, 16)
+  (conv2): GCNConv(16, 7)
+) Data(x=[2708, 1433], edge_index=[2, 10556], y=[2708], train_mask=[2708], val_mask=[2708], test_mask=[2708])
+trainable parameters count 23063
+model size in bytes 93791
+Data theoretical memory usage in bytes 15720940
+CPU memory 31578468
+GPU memory 0
+nvidia-smi free and used GPU memory (7209.49, 1159.64)
+STATS_SUM1 StatsSummary(time_mean=0.009331882931292057, time_std=0.0011859016958624125, max_allocated_cuda=0.0, max_reserved_cuda=0.0, max_active_cuda=0.0, min_nvidia_smi_free_cuda=7209.49, max_nvidia_smi_used_cuda=1159.64)
+RUNNING SPARSETENSOR
+MODEL INFO GNN(
+  (conv1): GCNConv(1433, 16)
+  (conv2): GCNConv(16, 7)
+) Data(x=[2708, 1433], y=[2708], train_mask=[2708], val_mask=[2708], test_mask=[2708], adj_t=[2708, 2708, nnz=10556])
+trainable parameters count 23063
+model size in bytes 93791
+Data theoretical memory usage in bytes 15658164
+CPU memory 32737444
+GPU memory 0
+nvidia-smi free and used GPU memory (7209.49, 1159.64)
+STATS_SUM2 StatsSummary(time_mean=0.006551723927259445, time_std=0.004015009384602308, max_allocated_cuda=0.0, max_reserved_cuda=0.0, max_active_cuda=0.0, min_nvidia_smi_free_cuda=7209.49, max_nvidia_smi_used_cuda=1159.64)
+SPEEDUP of 1.424340072154954
+DATASET STATS OF ORIGINAL
+Dataset STATS Data(x=[3327, 3703], edge_index=[2, 9104], y=[3327], train_mask=[3327], val_mask=[3327], test_mask=[3327])
+==============================================================
+Number of nodes: 3327
+Number of edges: 9104
+Average node degree: 2.74
+Number of training nodes: 120
+Training node label rate: 0.04
+Has isolated nodes: True
+Has self-loops: False
+Is undirected: True
+
+DATASET STATS OF SPARSETENSOR
+Dataset STATS Data(x=[3327, 3703], y=[3327], train_mask=[3327], val_mask=[3327], test_mask=[3327], adj_t=[3327, 3327, nnz=9104])
+==============================================================
+Number of nodes: 3327
+Number of edges: 9104
+Average node degree: 2.74
+Number of training nodes: 120
+Training node label rate: 0.04
+Has isolated nodes: True
+Has self-loops: False
+Is undirected: True
+RUNNING ORIGINAL
+MODEL INFO GNN(
+  (conv1): GCNConv(3703, 16)
+  (conv2): GCNConv(16, 6)
+) Data(x=[3327, 3703], edge_index=[2, 9104], y=[3327], train_mask=[3327], val_mask=[3327], test_mask=[3327])
+trainable parameters count 59366
+model size in bytes 239007
+Data theoretical memory usage in bytes 49461785
+CPU memory 132376290
+GPU memory 0
+nvidia-smi free and used GPU memory (7209.49, 1159.64)
+STATS_SUM1 StatsSummary(time_mean=0.013370269909501076, time_std=0.006273897830396891, max_allocated_cuda=0.0, max_reserved_cuda=0.0, max_active_cuda=0.0, min_nvidia_smi_free_cuda=7209.49, max_nvidia_smi_used_cuda=1159.64)
+RUNNING SPARSETENSOR
+MODEL INFO GNN(
+  (conv1): GCNConv(3703, 16)
+  (conv2): GCNConv(16, 6)
+) Data(x=[3327, 3703], y=[3327], train_mask=[3327], val_mask=[3327], test_mask=[3327], adj_t=[3327, 3327, nnz=9104])
+trainable parameters count 59366
+model size in bytes 239007
+Data theoretical memory usage in bytes 49415577
+CPU memory 133739242
+GPU memory 0
+nvidia-smi free and used GPU memory (7209.49, 1159.64)
+STATS_SUM2 StatsSummary(time_mean=0.010732713155448437, time_std=0.00537334056571126, max_allocated_cuda=0.0, max_reserved_cuda=0.0, max_active_cuda=0.0, min_nvidia_smi_free_cuda=7209.49, max_nvidia_smi_used_cuda=1159.64)
+SPEEDUP of 1.2457493008385945
+DATASET STATS OF ORIGINAL
+Dataset STATS Data(x=[19717, 500], edge_index=[2, 88648], y=[19717], train_mask=[19717], val_mask=[19717], test_mask=[19717])
+==============================================================
+Number of nodes: 19717
+Number of edges: 88648
+Average node degree: 4.50
+Number of training nodes: 60
+Training node label rate: 0.00
+Has isolated nodes: False
+Has self-loops: False
+Is undirected: True
+
+DATASET STATS OF SPARSETENSOR
+Dataset STATS Data(x=[19717, 500], y=[19717], train_mask=[19717], val_mask=[19717], test_mask=[19717], adj_t=[19717, 19717, nnz=88648])
+==============================================================
+Number of nodes: 19717
+Number of edges: 88648
+Average node degree: 4.50
+Number of training nodes: 60
+Training node label rate: 0.00
+Has isolated nodes: False
+Has self-loops: False
+Is undirected: True
+RUNNING ORIGINAL
+MODEL INFO GNN(
+  (conv1): GCNConv(500, 16)
+  (conv2): GCNConv(16, 3)
+) Data(x=[19717, 500], edge_index=[2, 88648], y=[19717], train_mask=[19717], val_mask=[19717], test_mask=[19717])
+trainable parameters count 8067
+model size in bytes 33823
+Data theoretical memory usage in bytes 41069255
+CPU memory 216559332
+GPU memory 0
+nvidia-smi free and used GPU memory (7209.49, 1159.64)
+STATS_SUM1 StatsSummary(time_mean=0.04210673272609711, time_std=0.006936218589544296, max_allocated_cuda=0.0, max_reserved_cuda=0.0, max_active_cuda=0.0, min_nvidia_smi_free_cuda=7209.49, max_nvidia_smi_used_cuda=1159.64)
+RUNNING SPARSETENSOR
+MODEL INFO GNN(
+  (conv1): GCNConv(500, 16)
+  (conv2): GCNConv(16, 3)
+) Data(x=[19717, 500], y=[19717], train_mask=[19717], val_mask=[19717], test_mask=[19717], adj_t=[19717, 19717, nnz=88648])
+trainable parameters count 8067
+model size in bytes 33823
+Data theoretical memory usage in bytes 40517815
+CPU memory 224662132
+GPU memory 0
+nvidia-smi free and used GPU memory (7209.49, 1159.64)
+STATS_SUM2 StatsSummary(time_mean=0.013296166434884071, time_std=0.004192746244370937, max_allocated_cuda=0.0, max_reserved_cuda=0.0, max_active_cuda=0.0, min_nvidia_smi_free_cuda=7209.49, max_nvidia_smi_used_cuda=1159.64)
+SPEEDUP of 3.16683255525631
